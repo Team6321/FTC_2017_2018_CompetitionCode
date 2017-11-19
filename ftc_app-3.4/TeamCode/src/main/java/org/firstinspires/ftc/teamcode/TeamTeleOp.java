@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.Range;
 
-/**
+/*
  * Created by Sriram on 10/29/2017.
  */
 
@@ -49,34 +49,8 @@ public class TeamTeleOp extends LinearOpMode
     {
        initMotors();
        initServo();
-       telemetry.addData("STATUS: ", "Initialized hardware successfully.");
+       telemetry.addData("STATUS: ", "All hardware initialized successfully.");
        telemetry.update();
-    }
-
-    private void moveRobot()
-    {
-        //left joystick controls the power going to all 4 wheels (move up and down)
-        //right joystick controls the direction the robot goes (move left and right)
-        float wheelMotorsPower = -gamepad1.left_stick_y;
-        float turn = gamepad1.right_stick_x;
-
-        //makes sure we don't burn out the motors from too much/little power going to them
-        //we subtract power from one side of the robot in order to turn.
-        double leftMotorPower = restrictValue(wheelMotorsPower-turn);
-        double rightMotorPower = restrictValue(wheelMotorsPower+turn);
-
-        //applying power to the motors
-        backLeft.setPower(leftMotorPower);
-        frontLeft.setPower(leftMotorPower);
-        backRight.setPower(rightMotorPower);
-        frontRight.setPower(rightMotorPower);
-    }
-
-    private void moveArm()
-    {
-        moveArmUpAndDown();
-        moveClawUpAndDown();
-        openAndCloseClaw();
     }
 
     private void initMotors()
@@ -109,13 +83,39 @@ public class TeamTeleOp extends LinearOpMode
         clawServo = hardwareMap.servo.get("sClaw");
     }
 
+    private void moveRobot()
+    {
+        //left joystick controls the power going to all 4 wheels (move up and down)
+        //right joystick controls the direction the robot goes (move left and right)
+        float wheelMotorsPower = -gamepad1.left_stick_y;
+        float turn = gamepad1.right_stick_x;
+
+        //makes sure we don't burn out the motors from too much/little power going to them
+        //we subtract power from one side of the robot in order to turn.
+        double leftMotorPower = restrictPower(wheelMotorsPower-turn);
+        double rightMotorPower = restrictPower(wheelMotorsPower+turn);
+
+        //applying power to the motors
+        backLeft.setPower(leftMotorPower);
+        frontLeft.setPower(leftMotorPower);
+        backRight.setPower(rightMotorPower);
+        frontRight.setPower(rightMotorPower);
+    }
+
+    private void moveArm()
+    {
+        moveArmUpAndDown();
+        moveClawUpAndDown();
+        openAndCloseClaw();
+    }
+
     private void moveArmUpAndDown()
     {
         //Taking y-values from the left stick and restricting values
-        double armMotorsPower = restrictValue(gamepad2.left_stick_y);
+        double armMotorsPower = restrictPower(gamepad2.left_stick_y);
 
         //if the motors don't recieve any power, give them 10% power
-        armMotorsPower = (armMotorsPower == 0.0) ? 0.1: armMotorsPower;
+        armMotorsPower = armMotorsPower == 0.0 ? 0.1: armMotorsPower;
 
         armRight.setPower(armMotorsPower);
         armLeft.setPower(armMotorsPower);
@@ -124,7 +124,7 @@ public class TeamTeleOp extends LinearOpMode
     private void moveClawUpAndDown()
     {
         //Taking y-values from the right stick and restricting values
-        double clawMotorPower = restrictValue(gamepad2.right_stick_y);
+        double clawMotorPower = restrictPower(gamepad2.right_stick_y);
 
         clawWristMotor.setPower(clawMotorPower);
     }
@@ -138,17 +138,13 @@ public class TeamTeleOp extends LinearOpMode
         clawServo.setPosition(clawPosition);
     }
 
-    private double restrictValue(float decimal)
-    {
-        return scaleInput(Range.clip(decimal, -1, 1));
-    }
+    private double restrictPower(float power) { return scaleInput(Range.clip(power, -1, 1)); }
 
     public void finish()
     {
         clawServo.setPosition(0.5); //just for aesthetics? Robert put it here, so I won't touch it.
                                     //I also cannot think of anything else to put here.
     }
-
 
     //used for motor values, to make sure it doesn't go over or under range
     private double scaleInput(double dVal)  {
