@@ -11,14 +11,7 @@ import com.qualcomm.robotcore.util.Range;
  */
 
 /*
-    CONCERNS:
-    1) Which motors did we reverse?
-    2) Do the drivers like the button configurations?
-    3) Does the subtraction for the motor powers work?
- */
-
-/*
-    NOTES ABOUT THIS PROGRAM IN GENERAL:
+    NOTES ABOUT THIS PROGRAM:
     1) All the buttons and what they do are on Google Drive under the Software folder
  */
 
@@ -79,7 +72,7 @@ public class TeamTeleOp extends LinearOpMode
         frontRight.setPower(rightMotorPower);
     }
 
-        private void moveArm()
+    private void moveArm()
     {
         moveArmUpAndDown();
         moveClawUpAndDown();
@@ -97,11 +90,11 @@ public class TeamTeleOp extends LinearOpMode
         armRight = hardwareMap.dcMotor.get("AMRight");
         clawWristMotor = hardwareMap.dcMotor.get("mChain");
 
-        //tentatively reversing left wheel motors because idk which motors are reversed
-        backLeft.setDirection(DcMotor.Direction.REVERSE);
-        frontLeft.setDirection(DcMotor.Direction.REVERSE);
-        backRight.setDirection(DcMotor.Direction.FORWARD);
-        frontRight.setDirection(DcMotor.Direction.FORWARD);
+        //reversing previous configuration, due to guessing wrong
+        backLeft.setDirection(DcMotor.Direction.FORWARD);
+        frontLeft.setDirection(DcMotor.Direction.FORWARD);
+        backRight.setDirection(DcMotor.Direction.REVERSE);
+        frontRight.setDirection(DcMotor.Direction.REVERSE);
 
         //tentatively reversing left motor for the 2 arm motors, as well
         armLeft.setDirection(DcMotor.Direction.REVERSE);
@@ -120,6 +113,9 @@ public class TeamTeleOp extends LinearOpMode
     {
         //Taking y-values from the left stick and restricting values
         double armMotorsPower = restrictValue(gamepad2.left_stick_y);
+
+        //if the motors don't recieve any power, give them 10% power
+        armMotorsPower = (armMotorsPower == 0.0) ? 0.1: armMotorsPower;
 
         armRight.setPower(armMotorsPower);
         armLeft.setPower(armMotorsPower);
@@ -156,11 +152,11 @@ public class TeamTeleOp extends LinearOpMode
 
     //used for motor values, to make sure it doesn't go over or under range
     private double scaleInput(double dVal)  {
-        double[] scaleArray = { 0.0, 0.05, 0.09, 0.10, 0.12, 0.15, 0.18, 0.24,
-                0.30, 0.36, 0.43, 0.50, 0.60, 0.72, 0.85, 1.00, 1.00 };
+        double[] scaleArray = { 0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35,
+                0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00};
 
         // get the corresponding index for the scaleInput array.
-        int index = (int) (dVal * 16.0);
+        int index = (int) (dVal * 21.0);
 
         // index should be positive.
         index = Math.abs(index);
@@ -171,6 +167,5 @@ public class TeamTeleOp extends LinearOpMode
         // return scaled value.
         return finalPower;
     }
-
 
 }
