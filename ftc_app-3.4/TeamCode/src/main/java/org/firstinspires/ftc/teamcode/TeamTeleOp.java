@@ -117,8 +117,9 @@ public class TeamTeleOp extends LinearOpMode
         //if the motors don't recieve any power, give them 10% power
         armMotorsPower = armMotorsPower == 0.0 ? 0.1: armMotorsPower;
 
-        armRight.setPower(armMotorsPower);
-        armLeft.setPower(armMotorsPower);
+        //Divide by 2 to not make the power too much
+        armRight.setPower(armMotorsPower/4.0);
+        armLeft.setPower(armMotorsPower/4.0);
     }
 
     private void moveClawUpAndDown()
@@ -126,7 +127,8 @@ public class TeamTeleOp extends LinearOpMode
         //Taking y-values from the right stick and restricting values
         double clawMotorPower = restrictPower(gamepad2.right_stick_y);
 
-        clawWristMotor.setPower(clawMotorPower);
+        //Divide by 2 to not make the power too much
+        clawWristMotor.setPower(clawMotorPower/2.0);
     }
 
     private void openAndCloseClaw()
@@ -149,7 +151,7 @@ public class TeamTeleOp extends LinearOpMode
     //used for motor values, to make sure it doesn't go over or under range
     private double scaleInput(double dVal)  {
         double[] scaleArray = { 0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35,
-                0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00};
+                0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00, 1.00};
 
         // get the corresponding index for the scaleInput array.
         int index = (int) (dVal * 21.0);
