@@ -8,21 +8,36 @@ import com.qualcomm.robotcore.hardware.Servo;
  * Created by Dinesh on 11/28/2017.
  */
 
+/*
+    Notes:
+    1) Each wheel is 4" in diameter
+    2) 1120 ticks per rotation
+    3) 1:3 gear ratio, so there are 3360 ticks per 1 rotation
+    4) 1 rotation = 4*pi inches, or about 12"
+ */
+
 public class BlueAutonomous extends LinearOpMode
 {
+    //EACH WHEEL IS 4" in diameter
+    //
     private DcMotor frontLeft, frontRight, backLeft, backRight, armLeft, armRight, clawWristMotor;
     private Servo clawServo;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
-    private final int TICK_PER_REV = 1120;
+    private final int TICKS_PER_REV = 1120;
 
     @Override
     public void runOpMode() throws InterruptedException
     {
-        //runs only onc     e: when robot is initialized
+        //runs only once when robot is initialized
         initHardware();
 
         //after start is pressed, continue to the while loop
         waitForStart();
+
+        while(opModeIsActive())
+        {
+
+        }
     }
     private void initHardware()
     {
@@ -66,6 +81,11 @@ public class BlueAutonomous extends LinearOpMode
     private void initServo()
     {
         clawServo = hardwareMap.servo.get("sClaw");
+    }
+
+    private void driveForward()
+    {
+
     }
 
 
