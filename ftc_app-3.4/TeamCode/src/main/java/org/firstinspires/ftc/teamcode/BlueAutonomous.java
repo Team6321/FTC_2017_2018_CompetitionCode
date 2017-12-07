@@ -4,6 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.GyroSensor;
 import com.qualcomm.robotcore.hardware.Servo;
 
@@ -32,8 +33,8 @@ public class BlueAutonomous extends LinearOpMode
     private ColorSensor colorSensor;
     private GyroSensor gyro;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
-    private final double TICKS_PER_REV = 1120.0;
-    private final double WHEEL_DIAMETER = 4.0 //in inches, of course
+    private final double TICKS_PER_REV = 1120;
+    private final double WHEEL_DIAMETER = 4.25; //in inches, of course
     private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
     private final double TICKS_PER_INCH = (TICKS_PER_REV * GEAR_RATIO) / (WHEEL_DIAMETER * Math.PI); //this is ticks in 1 rotation divided by circumference
 
@@ -72,11 +73,11 @@ public class BlueAutonomous extends LinearOpMode
         armRight = hardwareMap.dcMotor.get("AMRight");
         clawWristMotor = hardwareMap.dcMotor.get("mChain");
 
-        //setting all motors to run with encoders
+        /** //setting all motors to run with encoders
         backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER); **/
 
         //reversing previous configuration, due to guessing wrong
         backLeft.setDirection(DcMotor.Direction.FORWARD);
@@ -96,6 +97,7 @@ public class BlueAutonomous extends LinearOpMode
     {
         colorServo = hardwareMap.servo.get("colorServo");
     }
+
     private void initColorSensor()
     {
         colorSensor = hardwareMap.colorSensor.get("colorSensor");
@@ -105,6 +107,7 @@ public class BlueAutonomous extends LinearOpMode
     {
         gyro = hardwareMap.gyroSensor.get("gyro");
     }
+
     private void doAutonomous()
     {
         knockOffJewel();
@@ -115,6 +118,7 @@ public class BlueAutonomous extends LinearOpMode
     {
         //lower the color sensor to read it
         colorServo.setPosition(1);
+
         boolean aheadIsRed = readColorSensor();
 
         if(aheadIsRed) //if the ball in front is red, turn 30 degrees counterclockwise and then rotate back
@@ -153,19 +157,96 @@ public class BlueAutonomous extends LinearOpMode
         }
 
         System.exit(1);
+
         return false; //just to pacify whiny compiler, code won't reach till here
     }
 
     //turns robot specified number of degrees, and then turns it back
-    private void rotateRobot(double degrees)
+    private void rotateRobot(double turnDegrees)
     {
-        double targetHeading = (degrees < 0) ? (359 - degrees) : degrees; //359 because gyro doesn't go till 360 (b/c 360 degrees = 0 degrees)
+        ////////////////Turn motors respective directions so we don't turn more 180 degrees counterclockwise /////////
+        if(turnDegrees >= 180)
+        {
+            frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
+            backRight.setDirection(DcMotorSimple.Direction.REVERSE);
+            frontLeft.setDirection(DcMotorSimple.Direction.FORWARD);
+            backLeft.setDirection(DcMotorSimple.Direction.FORWARD);
+        }
+        else
+        {
+            frontRight.setDirection(DcMotorSimple.Direction.FORWARD);
+            backRight.setDirection(DcMotorSimple.Direction.FORWARD);
+            frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+            backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+        }
+
+        double targetHeading = (turnDegrees < 0) ? (359 - turnDegrees) : turnDegrees; //359 because gyro doesn't go till 360 (b/c 360 degrees = 0 degrees
+
+        double currentHeading;
+        while(true)
+        {
+            currentHeading = gyro.getHeading();
+
+            if(currentHeading != targetHeading)
+            {
+
+            }
+        }
 
     }
 
     private void driveForward(double numOfInches)
     {
+        runUsingEncoders();
+        resetEncoders();
+        setPosition( (int)(TICKS_PER_INCH * numOfInches) );
+        runToPosition();
+        stopUsingEncoders();
+    }
 
+    private void resetEncoders()
+    {
+        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+    }
+
+    private void runUsingEncoders()
+    {
+        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+    }
+
+    private void setPosition(int numOfTicks)
+    {
+        frontLeft.setTargetPosition(numOfTicks);
+        backLeft.setTargetPosition(numOfTicks);
+        frontRight.setTargetPosition(numOfTicks);
+        frontRight.setTargetPosition(numOfTicks);
+    }
+
+    private void runToPosition()
+    {
+        frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        backLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
+        while(frontLeft.isBusy() && frontRight.isBusy())
+        {
+            // let the motors keep running
+        }
+    }
+
+    private void stopUsingEncoders()
+    {
+        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
 }

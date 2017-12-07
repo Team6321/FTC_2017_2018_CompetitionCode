@@ -22,6 +22,11 @@ public class Test extends LinearOpMode
     private ColorSensor colorSensor;
     private GyroSensor gyro;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
+    private final double TICKS_PER_REV = 1120;
+    private final double WHEEL_DIAMETER = 4.25; //in inches, of course
+    private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
+    private final double TICKS_PER_INCH = (TICKS_PER_REV * GEAR_RATIO) / (WHEEL_DIAMETER * Math.PI); //this is ticks in 1 rotation divided by circumference
+
 
     public void runOpMode()
     {
@@ -76,6 +81,7 @@ public class Test extends LinearOpMode
     {
         colorServo = hardwareMap.servo.get("colorServo");
     }
+
     private void initColorSensor()
     {
         colorSensor = hardwareMap.colorSensor.get("colorSensor");
@@ -89,5 +95,60 @@ public class Test extends LinearOpMode
     private void testCode()
     {
         //place whatever code to test here
+        driveForward(24 );
+    }
+
+    private void driveForward(double numOfInches)
+    {
+        runUsingEncoders();
+        resetEncoders();
+        setPosition( (int)(TICKS_PER_INCH * numOfInches) );
+        runToPosition();
+        stopUsingEncoders();
+    }
+
+    private void resetEncoders()
+    {
+        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+    }
+
+    private void runUsingEncoders()
+    {
+        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+    }
+
+    private void setPosition(int numOfTicks)
+    {
+        frontLeft.setTargetPosition(numOfTicks);
+        backLeft.setTargetPosition(numOfTicks);
+        frontRight.setTargetPosition(numOfTicks);
+        frontRight.setTargetPosition(numOfTicks);
+    }
+
+    private void stopUsingEncoders()
+    {
+        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+    }
+
+    private void runToPosition()
+    {
+        frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        backLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
+        while(frontLeft.isBusy() && frontRight.isBusy())
+        {
+            // let the motors keep running
+        }
     }
 }
