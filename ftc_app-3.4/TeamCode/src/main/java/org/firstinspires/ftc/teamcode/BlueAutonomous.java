@@ -23,7 +23,10 @@ public class BlueAutonomous extends LinearOpMode
     private DcMotor frontLeft, frontRight, backLeft, backRight, armLeft, armRight, clawWristMotor;
     private Servo clawServo;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
-    private final int TICKS_PER_REV = 1120;
+    private final double TICKS_PER_REV = 1120.0;
+    private final double WHEEL_DIAMETER = 4.0 //in inches, of course
+    private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
+    private final double TICKS_PER_INCH = (TICKS_PER_REV * GEAR_RATIO) / (WHEEL_DIAMETER * Math.PI); //this is ticks in 1 rotation divided by circumference
 
     @Override
     public void runOpMode() throws InterruptedException
@@ -83,10 +86,9 @@ public class BlueAutonomous extends LinearOpMode
         clawServo = hardwareMap.servo.get("sClaw");
     }
 
-    private void driveForward()
+    private void driveForward(double numOfInches)
     {
 
     }
-
 
 }

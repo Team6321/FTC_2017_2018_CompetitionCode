@@ -68,5 +68,6 @@ public class FtcOpModeRegister implements OpModeRegister {
          * Any manual OpMode class registrations should go here.
          */
         manager.register("TeamTeleOp", TeamTeleOp.class);
+        manager.register("BlueAutonomous",BlueAutonomous.class);
     }
 }
