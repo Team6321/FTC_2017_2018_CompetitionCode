@@ -32,7 +32,6 @@ public class BlueAutonomous extends LinearOpMode
     private Servo colorServo;
     private ColorSensor colorSensor;
     private GyroSensor gyro;
-    private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
     private final double TICKS_PER_REV = 1120;
     private final double WHEEL_DIAMETER = 4.25; //in inches, of course
     private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
@@ -105,6 +104,7 @@ public class BlueAutonomous extends LinearOpMode
     private void doAutonomous()
     {
         knockOffJewel();
+        rotateRobot(108); //this makes it turn front straight ahead to facing the parking zone
         parkRobot();
     }
 
@@ -181,7 +181,7 @@ public class BlueAutonomous extends LinearOpMode
         double numOfInchesToTurn = calculateTurnDistance(turnDegrees);
         driveForward(numOfInchesToTurn); //goes until reaches distance to get to turn degree
 
-        //rest of the code in this method is a check to make sure it works.
+        //this is a check to make sure it works.
         double currentHeading = gyro.getHeading();
         if(currentHeading != targetHeading)
         {
@@ -190,7 +190,11 @@ public class BlueAutonomous extends LinearOpMode
             System.exit(1);
         }
 
-
+        //makes all the motors go forwards again, to not mess up the rest of the program.
+        frontRight.setDirection(DcMotorSimple.Direction.FORWARD);
+        backRight.setDirection(DcMotorSimple.Direction.FORWARD);
+        frontLeft.setDirection(DcMotorSimple.Direction.FORWARD);
+        backLeft.setDirection(DcMotorSimple.Direction.FORWARD);
     }
 
     private double calculateTurnDistance(double turnTheta)
@@ -201,7 +205,7 @@ public class BlueAutonomous extends LinearOpMode
         //we're assuming that the length (and width) of the robot is 18" here
 
         double turnDistance = (double)(turnTheta / 360.0); //finds how much of circle it is cutting off
-        turnDistance = turnDistance * (2 * Math.PI * 18); //18 is placeholder, idk length/ width of robot
+        turnDistance = turnDistance * (2 * Math.PI * (9 * Math.sqrt(2))); //9*rt(2) is placeholder, idk length/ width of robot
 
         return turnDistance;
     }
