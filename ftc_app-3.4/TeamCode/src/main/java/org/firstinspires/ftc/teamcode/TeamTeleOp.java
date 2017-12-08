@@ -117,9 +117,13 @@ public class TeamTeleOp extends LinearOpMode
         //if the motors don't recieve any power, give them 10% power
         armMotorsPower = armMotorsPower == 0.0 ? 0.1: armMotorsPower;
 
+        //scales power so that when arm goes up it goes faster than when it comes down
+        if(armMotorsPower > 0) {armMotorsPower /= 2;}
+        else if(armMotorsPower < 0) {armMotorsPower /= 4;}
+
         //Divide by 2 to not make the power too much
-        armRight.setPower(armMotorsPower/4.0);
-        armLeft.setPower(armMotorsPower/4.0);
+        armRight.setPower(armMotorsPower);
+        armLeft.setPower(armMotorsPower);
     }
 
     private void moveClawUpAndDown()

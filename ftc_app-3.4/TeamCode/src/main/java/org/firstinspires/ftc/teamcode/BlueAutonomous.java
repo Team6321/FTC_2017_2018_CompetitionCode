@@ -73,12 +73,6 @@ public class BlueAutonomous extends LinearOpMode
         armRight = hardwareMap.dcMotor.get("AMRight");
         clawWristMotor = hardwareMap.dcMotor.get("mChain");
 
-        /** //setting all motors to run with encoders
-        backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER); **/
-
         //reversing previous configuration, due to guessing wrong
         backLeft.setDirection(DcMotor.Direction.FORWARD);
         frontLeft.setDirection(DcMotor.Direction.FORWARD);
@@ -124,9 +118,11 @@ public class BlueAutonomous extends LinearOpMode
         if(aheadIsRed) //if the ball in front is red, turn 30 degrees counterclockwise and then rotate back
         {
             rotateRobot(30.0);
+            rotateRobot(-30.0);
         }
         if(! aheadIsRed) //if the ball in front is blue, turn 30 degrees clockwise to hit the red ball and then rotate back
         {
+            rotateRobot(-30.0);
             rotateRobot(30.0);
         }
     }
@@ -140,7 +136,7 @@ public class BlueAutonomous extends LinearOpMode
     {
         int redValue = colorSensor.red();
         int blueValue = colorSensor.blue();
-        int greenValue = colorSensor.green(); //this is just to make sure the sensor is working properly
+        int greenValue = colorSensor.green(); //this is just a check to make sure the sensor is working properly
 
         if(redValue > blueValue) //if we see a red ball, we hit it by rotating 30 degrees counterclockwise
         {
@@ -180,26 +176,41 @@ public class BlueAutonomous extends LinearOpMode
             backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
         }
 
-        double targetHeading = (turnDegrees < 0) ? (359 - turnDegrees) : turnDegrees; //359 because gyro doesn't go till 360 (b/c 360 degrees = 0 degrees
+        //////////////Now do calculations for turning and stuff/////////////////////////////////
+        double targetHeading = (turnDegrees < 0) ? (360 - turnDegrees) : turnDegrees;
+        double numOfInchesToTurn = calculateTurnDistance(turnDegrees);
+        driveForward(numOfInchesToTurn); //goes until reaches distance to get to turn degree
 
-        double currentHeading;
-        while(true)
+        //rest of the code in this method is a check to make sure it works.
+        double currentHeading = gyro.getHeading();
+        if(currentHeading != targetHeading)
         {
-            currentHeading = gyro.getHeading();
-
-            if(currentHeading != targetHeading)
-            {
-
-            }
+            telemetry.addData("STATUS:","Stop acting like you're so smart at math. You're clearly not. Bye");
+            telemetry.update();
+            System.exit(1);
         }
 
+
+    }
+
+    private double calculateTurnDistance(double turnTheta)
+    {
+        //this uses the fact that both the point you start off on and the point you end on are
+        //on a circle with the radius of the length or width of the robot
+
+        //we're assuming that the length (and width) of the robot is 18" here
+
+        double turnDistance = (double)(turnTheta / 360.0); //finds how much of circle it is cutting off
+        turnDistance = turnDistance * (2 * Math.PI * 18); //18 is placeholder, idk length/ width of robot
+
+        return turnDistance;
     }
 
     private void driveForward(double numOfInches)
     {
         runUsingEncoders();
         resetEncoders();
-        setPosition( (int)(TICKS_PER_INCH * numOfInches) );
+        setPosition(numOfInches);
         runToPosition();
         stopUsingEncoders();
     }
@@ -220,12 +231,14 @@ public class BlueAutonomous extends LinearOpMode
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
     }
 
-    private void setPosition(int numOfTicks)
+    private void setPosition(double numOfInches)
     {
-        frontLeft.setTargetPosition(numOfTicks);
-        backLeft.setTargetPosition(numOfTicks);
-        frontRight.setTargetPosition(numOfTicks);
-        frontRight.setTargetPosition(numOfTicks);
+        int distance = (int)(numOfInches * TICKS_PER_INCH);
+
+        frontLeft.setTargetPosition(distance);
+        backLeft.setTargetPosition(distance);
+        frontRight.setTargetPosition(distance);
+        frontRight.setTargetPosition(distance);
     }
 
     private void runToPosition()
