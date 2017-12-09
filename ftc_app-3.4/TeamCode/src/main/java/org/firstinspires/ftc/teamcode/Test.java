@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -12,7 +13,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  */
 
 
-@TeleOp(name = "TestCode", group = "TeamCode")
+@Autonomous(name = "TestCode", group = "TeamCode")
 
 
 public class Test extends LinearOpMode
@@ -20,14 +21,13 @@ public class Test extends LinearOpMode
     private DcMotor frontLeft, frontRight, backLeft, backRight, armLeft, armRight, clawWristMotor;
     private Servo colorServo;
     private ColorSensor colorSensor;
-    private GyroSensor gyro;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
     private final double TICKS_PER_REV = 1120;
     private final double WHEEL_DIAMETER = 4.25; //in inches, of course
     private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
     private final double TICKS_PER_INCH = (TICKS_PER_REV * GEAR_RATIO) / (WHEEL_DIAMETER * Math.PI); //this is ticks in 1 rotation divided by circumference
 
-
+    @Override
     public void runOpMode()
     {
         initHardware();
@@ -41,7 +41,6 @@ public class Test extends LinearOpMode
         initMotors();
         initServo();
         initColorSensor();
-        initGyro();
         telemetry.addData("STATUS: ", "All hardware initialized successfully.");
         telemetry.update();
     }
@@ -87,68 +86,82 @@ public class Test extends LinearOpMode
         colorSensor = hardwareMap.colorSensor.get("colorSensor");
     }
 
-    private void initGyro()
-    {
-        gyro = hardwareMap.gyroSensor.get("gyro");
-    }
-
     private void testCode()
     {
         //place whatever code to test here
-        driveForward(24 );
+        drive(24, 0.8, 0.8);
     }
 
-    private void driveForward(double numOfInches)
+    private void drive(double numOfInches, double leftPower, double rightPower)
     {
         runUsingEncoders();
         resetEncoders();
-        setPosition( (int)(TICKS_PER_INCH * numOfInches) );
-        runToPosition();
+        setPosition(numOfInches);
+        runToPosition(leftPower, rightPower);
         stopUsingEncoders();
     }
 
     private void resetEncoders()
     {
-        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+
     }
 
     private void runUsingEncoders()
     {
-        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
     }
 
-    private void setPosition(int numOfTicks)
+     private void setPosition(double numOfInches)
     {
-        frontLeft.setTargetPosition(numOfTicks);
-        backLeft.setTargetPosition(numOfTicks);
-        frontRight.setTargetPosition(numOfTicks);
-        frontRight.setTargetPosition(numOfTicks);
+        int distance = (int)(numOfInches * TICKS_PER_INCH);
+
+        backLeft.setTargetPosition(distance);
+        backRight.setTargetPosition(distance);
+        frontLeft.setTargetPosition(distance);
+        frontRight.setTargetPosition(distance);
     }
 
-    private void stopUsingEncoders()
+    private void runToPosition(double leftPower, double rightPower)
     {
-        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-    }
-
-    private void runToPosition()
-    {
-        frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         backLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        backRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
+        //set power to all motors
+        setPower(leftPower,rightPower);
+
 
         while(frontLeft.isBusy() && frontRight.isBusy())
         {
             // let the motors keep running
         }
+
+        //tells all motors to stop
+        setPower(0,0);
     }
+
+    private void stopUsingEncoders()
+    {
+        backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        backRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+    }
+
+    private void setPower(double leftPower, double rightPower)
+    {
+        backLeft.setPower(leftPower);
+        backRight.setPower(rightPower);
+        frontLeft.setPower(leftPower);
+        frontRight.setPower(rightPower);
+    }
+
 }

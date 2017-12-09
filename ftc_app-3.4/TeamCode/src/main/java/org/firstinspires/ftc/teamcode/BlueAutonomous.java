@@ -4,8 +4,6 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.DcMotorSimple;
-import com.qualcomm.robotcore.hardware.GyroSensor;
 import com.qualcomm.robotcore.hardware.Servo;
 
 /*
@@ -18,7 +16,6 @@ import com.qualcomm.robotcore.hardware.Servo;
     2) 1120 ticks per rotation
     3) 1:3 gear ratio, so there are 3360 ticks per 1 rotation
     4) 1 rotation = 4*pi inches, or about 12"
-
     5) Robot has to orient color servo so that when the color sensor comes down, it is between
         the jewels
 
@@ -31,7 +28,6 @@ public class BlueAutonomous extends LinearOpMode
     private DcMotor frontLeft, frontRight, backLeft, backRight, armLeft, armRight, clawWristMotor;
     private Servo colorServo;
     private ColorSensor colorSensor;
-    private GyroSensor gyro;
     private final double TICKS_PER_REV = 1120;
     private final double WHEEL_DIAMETER = 4.25; //in inches, of course
     private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
@@ -56,7 +52,6 @@ public class BlueAutonomous extends LinearOpMode
         initMotors();
         initServo();
         initColorSensor();
-        initGyro();
         telemetry.addData("STATUS: ", "All hardware initialized successfully.");
         telemetry.update();
     }
@@ -73,10 +68,10 @@ public class BlueAutonomous extends LinearOpMode
         clawWristMotor = hardwareMap.dcMotor.get("mChain");
 
         //reversing previous configuration, due to guessing wrong
-        backLeft.setDirection(DcMotor.Direction.FORWARD);
-        frontLeft.setDirection(DcMotor.Direction.FORWARD);
-        backRight.setDirection(DcMotor.Direction.REVERSE);
-        frontRight.setDirection(DcMotor.Direction.REVERSE);
+        backLeft.setDirection(DcMotor.Direction.REVERSE);
+        frontLeft.setDirection(DcMotor.Direction.REVERSE);
+        backRight.setDirection(DcMotor.Direction.FORWARD);
+        frontRight.setDirection(DcMotor.Direction.FORWARD);
 
         //tentatively reversing left motor for the 2 arm motors, as well
         armLeft.setDirection(DcMotor.Direction.REVERSE);
@@ -94,11 +89,6 @@ public class BlueAutonomous extends LinearOpMode
     private void initColorSensor()
     {
         colorSensor = hardwareMap.colorSensor.get("colorSensor");
-    }
-
-    private void initGyro()
-    {
-        gyro = hardwareMap.gyroSensor.get("gyro");
     }
 
     private void doAutonomous()
@@ -129,7 +119,7 @@ public class BlueAutonomous extends LinearOpMode
 
     private void parkRobot()
     {
-        driveForward(24); //this is a placeholder - idk how many inches to drive
+        drive(24,0.5, 0.5); //this is a placeholder - idk how many inches to drive
     }
 
     private boolean readColorSensor()
@@ -160,49 +150,38 @@ public class BlueAutonomous extends LinearOpMode
     //turns robot specified number of degrees, and then turns it back
     private void rotateRobot(double turnDegrees)
     {
+        boolean turnClockwise;
         ////////////////Turn motors respective directions so we don't turn more 180 degrees counterclockwise /////////
         if(turnDegrees >= 180)
         {
-            frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
-            backRight.setDirection(DcMotorSimple.Direction.REVERSE);
-            frontLeft.setDirection(DcMotorSimple.Direction.FORWARD);
-            backLeft.setDirection(DcMotorSimple.Direction.FORWARD);
+            turnClockwise = true;
         }
         else
         {
-            frontRight.setDirection(DcMotorSimple.Direction.FORWARD);
-            backRight.setDirection(DcMotorSimple.Direction.FORWARD);
-            frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
-            backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+            turnClockwise = false;
         }
 
         //////////////Now do calculations for turning and stuff/////////////////////////////////
-        double targetHeading = (turnDegrees < 0) ? (360 - turnDegrees) : turnDegrees;
         double numOfInchesToTurn = calculateTurnDistance(turnDegrees);
-        driveForward(numOfInchesToTurn); //goes until reaches distance to get to turn degree
 
-        //this is a check to make sure it works.
-        double currentHeading = gyro.getHeading();
-        if(currentHeading != targetHeading)
+        if(turnClockwise)
         {
-            telemetry.addData("STATUS:","Stop acting like you're so smart at math. You're clearly not. Bye");
-            telemetry.update();
-            System.exit(1);
+            drive(numOfInchesToTurn, 0.5, -0.5); //goes until reaches distance to get to turn degree
+        }
+        else
+        {
+            drive(numOfInchesToTurn, -0.5, 0.5); //goes until reaches distance to get to turn degree
         }
 
-        //makes all the motors go forwards again, to not mess up the rest of the program.
-        frontRight.setDirection(DcMotorSimple.Direction.FORWARD);
-        backRight.setDirection(DcMotorSimple.Direction.FORWARD);
-        frontLeft.setDirection(DcMotorSimple.Direction.FORWARD);
-        backLeft.setDirection(DcMotorSimple.Direction.FORWARD);
     }
 
     private double calculateTurnDistance(double turnTheta)
     {
-        //this uses the fact that both the point you start off on and the point you end on are
-        //on a circle with the radius of the length or width of the robot
+        /*this uses the fact that both the point you start off on and the point you end on are
+        on a circle with the radius of the length or width of the robot
 
-        //we're assuming that the length (and width) of the robot is 18" here
+        we're assuming that the length (and width) of the robot is 18" here
+        */
 
         double turnDistance = (double)(turnTheta / 360.0); //finds how much of circle it is cutting off
         turnDistance = turnDistance * (2 * Math.PI * (9 * Math.sqrt(2))); //9*rt(2) is placeholder, idk length/ width of robot
@@ -210,12 +189,12 @@ public class BlueAutonomous extends LinearOpMode
         return turnDistance;
     }
 
-    private void driveForward(double numOfInches)
+    private void drive(double numOfInches, double leftPower, double rightPower)
     {
         runUsingEncoders();
         resetEncoders();
         setPosition(numOfInches);
-        runToPosition();
+        runToPosition(leftPower, rightPower);
         stopUsingEncoders();
     }
 
@@ -245,17 +224,24 @@ public class BlueAutonomous extends LinearOpMode
         frontRight.setTargetPosition(distance);
     }
 
-    private void runToPosition()
+    private void runToPosition(double leftPower, double rightPower)
     {
         frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         backLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
+        //set power to all motors
+        setPower(leftPower,rightPower);
+
+
         while(frontLeft.isBusy() && frontRight.isBusy())
         {
             // let the motors keep running
         }
+
+        //tells all motors to stop
+        setPower(0,0);
     }
 
     private void stopUsingEncoders()
@@ -264,6 +250,14 @@ public class BlueAutonomous extends LinearOpMode
         backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+    }
+
+    private void setPower(double leftPower, double rightPower)
+    {
+        frontLeft.setPower(leftPower);
+        backLeft.setPower(leftPower);
+        frontRight.setPower(rightPower);
+        frontRight.setPower(rightPower);
     }
 
 }
