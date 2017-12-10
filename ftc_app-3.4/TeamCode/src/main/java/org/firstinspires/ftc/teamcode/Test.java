@@ -22,9 +22,9 @@ public class Test extends LinearOpMode
     private Servo colorServo;
     private ColorSensor colorSensor;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
-    private final double TICKS_PER_REV = 1120;
+    private final double TICKS_PER_REV = 1120.0;
     private final double WHEEL_DIAMETER = 4.25; //in inches, of course
-    private final double GEAR_RATIO = 3; //geared so that we have to go 3 times as many ticks/rotation
+    private final double GEAR_RATIO = 3.0; //geared so that we have to go 3 times as many ticks/rotation
     private final double TICKS_PER_INCH = (TICKS_PER_REV * GEAR_RATIO) / (WHEEL_DIAMETER * Math.PI); //this is ticks in 1 rotation divided by circumference
 
     @Override
@@ -89,7 +89,7 @@ public class Test extends LinearOpMode
     private void testCode()
     {
         //place whatever code to test here
-        drive(24, 0.8, 0.8);
+        drive( 24, 0.8, 0.8);
     }
 
     private void drive(double numOfInches, double leftPower, double rightPower)
@@ -107,7 +107,6 @@ public class Test extends LinearOpMode
         backRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-
     }
 
     private void runUsingEncoders()

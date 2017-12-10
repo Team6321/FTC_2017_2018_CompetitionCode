@@ -42,11 +42,9 @@ public class BlueAutonomous extends LinearOpMode
         //after start is pressed, continue to the while loop
         waitForStart();
 
-        while(opModeIsActive())
-        {
-            doAutonomous();
-        }
+        doAutonomous();
     }
+
     private void initHardware()
     {
         initMotors();
@@ -94,98 +92,73 @@ public class BlueAutonomous extends LinearOpMode
     private void doAutonomous()
     {
         knockOffJewel();
-        rotateRobot(108); //this makes it turn front straight ahead to facing the parking zone
+        rotateRobot(95); //this makes it turn front straight ahead to facing the parking zone
         parkRobot();
     }
 
     private void knockOffJewel()
     {
         //lower the color sensor to read it
-        colorServo.setPosition(1);
+        colorServo.setPosition(-50.00);
 
-        boolean aheadIsRed = readColorSensor();
+        boolean ballAheadIsBlue = isBlue();
 
-        if(aheadIsRed) //if the ball in front is red, turn 30 degrees counterclockwise and then rotate back
+        if(ballAheadIsBlue) //if the ball in front is red, turn 30 degrees counterclockwise and then rotate back
         {
             rotateRobot(30.0);
             rotateRobot(-30.0);
         }
-        if(! aheadIsRed) //if the ball in front is blue, turn 30 degrees clockwise to hit the red ball and then rotate back
+        if(! ballAheadIsBlue) //if the ball in front is blue, turn 30 degrees clockwise to hit the red ball and then rotate back
         {
             rotateRobot(-30.0);
             rotateRobot(30.0);
         }
+
+        colorServo.setPosition(0);
     }
 
     private void parkRobot()
     {
-        drive(24,0.5, 0.5); //this is a placeholder - idk how many inches to drive
+        drive(12,0.8, 0.8); //this is a placeholder - idk how many inches to drive
     }
 
-    private boolean readColorSensor()
+    private boolean isBlue()
     {
         int redValue = colorSensor.red();
         int blueValue = colorSensor.blue();
-        int greenValue = colorSensor.green(); //this is just a check to make sure the sensor is working properly
-
-        if(redValue > blueValue) //if we see a red ball, we hit it by rotating 30 degrees counterclockwise
-        {
-            return true;
-        }
-        else if(blueValue > redValue) //if we see a blue ball, we hit the red ball by rotating 30 degrees clockwise
-        {
-            return false;
-        }
-        else if( (greenValue > redValue) || (greenValue > blueValue) )
-        {
-            telemetry.addData("STATUS:","WE HAVE A PROBLEM, HOUSTON! COLOR SENSOR IS SEEING GREEN!");
-            telemetry.update();
-        }
-
-        System.exit(1);
-
-        return false; //just to pacify whiny compiler, code won't reach till here
+        return (blueValue > redValue);
     }
 
     //turns robot specified number of degrees, and then turns it back
     private void rotateRobot(double turnDegrees)
     {
-        boolean turnClockwise;
-        ////////////////Turn motors respective directions so we don't turn more 180 degrees counterclockwise /////////
-        if(turnDegrees >= 180)
-        {
-            turnClockwise = true;
-        }
-        else
-        {
-            turnClockwise = false;
-        }
+        boolean turnClockwise = (turnDegrees >= 180);
 
         //////////////Now do calculations for turning and stuff/////////////////////////////////
         double numOfInchesToTurn = calculateTurnDistance(turnDegrees);
 
         if(turnClockwise)
         {
-            drive(numOfInchesToTurn, 0.5, -0.5); //goes until reaches distance to get to turn degree
+            drive(numOfInchesToTurn, -0.5, 0.5); //goes until reaches distance to get to turn degree
         }
         else
         {
-            drive(numOfInchesToTurn, -0.5, 0.5); //goes until reaches distance to get to turn degree
+            drive(numOfInchesToTurn, 0.5, -0.5); //goes until reaches distance to get to turn degree
         }
 
     }
 
     private double calculateTurnDistance(double turnTheta)
     {
-        /*this uses the fact that both the point you start off on and the point you end on are
-        on a circle with the radius of the length or width of the robot
+        /*
+        this uses the fact that both the point you start off on and the point you end on are
+        on a circle with the radius of sqrt(18^2 + 17.5^2)/2
+        robotLength = 17"
+        robotWidth = 18.5"
 
-        we're assuming that the length (and width) of the robot is 18" here
         */
-
-        double turnDistance = (double)(turnTheta / 360.0); //finds how much of circle it is cutting off
-        turnDistance = turnDistance * (2 * Math.PI * (9 * Math.sqrt(2))); //9*rt(2) is placeholder, idk length/ width of robot
-
+        double diameterOfCircle = Math.sqrt(Math.pow(18.0, 2) + Math.pow(17.5, 2));
+        double turnDistance = (turnTheta / 360.0) * (diameterOfCircle * Math.PI); //finds how much of circle it is cutting off
         return turnDistance;
     }
 
@@ -200,39 +173,41 @@ public class BlueAutonomous extends LinearOpMode
 
     private void resetEncoders()
     {
-        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        //suicide is the answer
     }
 
     private void runUsingEncoders()
     {
-        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
     }
 
     private void setPosition(double numOfInches)
     {
-        int distance = (int)(numOfInches * TICKS_PER_INCH);
+        int distance = (int)Math.round(numOfInches * TICKS_PER_INCH);
 
-        frontLeft.setTargetPosition(distance);
         backLeft.setTargetPosition(distance);
+        backRight.setTargetPosition(distance);
+        frontLeft.setTargetPosition(distance);
         frontRight.setTargetPosition(distance);
-        frontRight.setTargetPosition(distance);
+        //hitler did 9/11
     }
 
     private void runToPosition(double leftPower, double rightPower)
     {
-        frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         backLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        backRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        frontLeft.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
         //set power to all motors
-        setPower(leftPower,rightPower);
+        setPower(leftPower, rightPower);
 
 
         while(frontLeft.isBusy() && frontRight.isBusy())
@@ -246,17 +221,17 @@ public class BlueAutonomous extends LinearOpMode
 
     private void stopUsingEncoders()
     {
-        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        backRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
     private void setPower(double leftPower, double rightPower)
     {
-        frontLeft.setPower(leftPower);
         backLeft.setPower(leftPower);
-        frontRight.setPower(rightPower);
+        backRight.setPower(rightPower);
+        frontLeft.setPower(leftPower);
         frontRight.setPower(rightPower);
     }
 
