@@ -1,41 +1,106 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.GyroSensor;
 import com.qualcomm.robotcore.hardware.Servo;
 
-/*
- * Created by Sriram on 12/7/2017.
+/**
+ * Created by Dinesh on 12/14/2017.
  */
 
+@TeleOp(name = "TestCode", group = "Team Code")
 
-@Autonomous(name = "TestCode", group = "TeamCode")
-
-
-public class Test extends LinearOpMode
+public class TestCode extends LinearOpMode
 {
     private DcMotor frontLeft, frontRight, backLeft, backRight, armLeft, armRight, clawWristMotor;
     private Servo colorServo;
     private ColorSensor colorSensor;
-    private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
     private final double TICKS_PER_REV = 1120.0;
     private final double WHEEL_DIAMETER = 4.25; //in inches, of course
     private final double GEAR_RATIO = 3.0; //geared so that we have to go 3 times as many ticks/rotation
     private final double TICKS_PER_INCH = (TICKS_PER_REV * GEAR_RATIO) / (WHEEL_DIAMETER * Math.PI); //this is ticks in 1 rotation divided by circumference
 
     @Override
-    public void runOpMode()
+    public void runOpMode() throws InterruptedException
     {
+        //runs only once when robot is initialized
         initHardware();
 
+        //after start is pressed, continue to the while loop
         waitForStart();
 
-        testCode();
+        doCrap();
     }
+
+    public void doCrap()
+    {
+
+        knockOffJewel();
+    }
+
+    private void knockOffJewel() {
+        //lower the color sensor to read it
+        colorServo.setPosition(-50.00);
+
+        boolean ballAheadIsBlue = isBlue();
+
+        if (ballAheadIsBlue) //if the ball in front is red, turn 30 degrees counterclockwise and then rotate back
+        {
+            rotateRobot(30.0);
+            rotateRobot(-30.0);
+        }
+        if (!ballAheadIsBlue) //if the ball in front is blue, turn 30 degrees clockwise to hit the red ball and then rotate back
+        {
+            rotateRobot(-30.0);
+            rotateRobot(30.0);
+        }
+
+        colorServo.setPosition(0);
+    }
+
+    //turns robot specified number of degrees, and then turns it back
+    private void rotateRobot(double turnDegrees)
+    {
+        boolean turnClockwise = (turnDegrees >= 180);
+
+        //////////////Now do calculations for turning and stuff/////////////////////////////////
+        double numOfInchesToTurn = calculateTurnDistance(turnDegrees);
+
+        if(turnClockwise)
+        {
+            drive(numOfInchesToTurn, -0.5, 0.5); //goes until reaches distance to get to turn degree
+        }
+        else
+        {
+            drive(numOfInchesToTurn, 0.5, -0.5); //goes until reaches distance to get to turn degree
+        }
+
+    }
+
+    private boolean isBlue()
+    {
+        int redValue = colorSensor.red();
+        int blueValue = colorSensor.blue();
+        return (blueValue > redValue);
+    }
+
+
+    private double calculateTurnDistance(double turnTheta)
+    {
+        /*
+        this uses the fact that both the point you start off on and the point you end on are
+        on a circle with the radius of sqrt(18^2 + 17.5^2)/2
+        robotLength = 17"
+        robotWidth = 18.5"
+
+        */
+        double diameterOfCircle = Math.sqrt(Math.pow(18.0, 2) + Math.pow(17.5, 2));
+        double turnDistance = (turnTheta / 360.0) * (diameterOfCircle * Math.PI); //finds how much of circle it is cutting off
+        return turnDistance;
+    }
+
     private void initHardware()
     {
         initMotors();
@@ -56,17 +121,11 @@ public class Test extends LinearOpMode
         armRight = hardwareMap.dcMotor.get("AMRight");
         clawWristMotor = hardwareMap.dcMotor.get("mChain");
 
-        //setting all motors to run with encoders
-        backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-
         //reversing previous configuration, due to guessing wrong
-        backLeft.setDirection(DcMotor.Direction.FORWARD);
-        frontLeft.setDirection(DcMotor.Direction.FORWARD);
-        backRight.setDirection(DcMotor.Direction.REVERSE);
-        frontRight.setDirection(DcMotor.Direction.REVERSE);
+        backLeft.setDirection(DcMotor.Direction.REVERSE);
+        frontLeft.setDirection(DcMotor.Direction.REVERSE);
+        backRight.setDirection(DcMotor.Direction.FORWARD);
+        frontRight.setDirection(DcMotor.Direction.FORWARD);
 
         //tentatively reversing left motor for the 2 arm motors, as well
         armLeft.setDirection(DcMotor.Direction.REVERSE);
@@ -74,22 +133,6 @@ public class Test extends LinearOpMode
 
         //also tentatively reversing the claw "wrist" motor
         clawWristMotor.setDirection(DcMotor.Direction.REVERSE);
-    }
-
-    private void initServo()
-    {
-        colorServo = hardwareMap.servo.get("colorServo");
-    }
-
-    private void initColorSensor()
-    {
-        colorSensor = hardwareMap.colorSensor.get("colorSensor");
-    }
-
-    private void testCode()
-    {
-        //place whatever code to test here
-        drive( 24, 0.8, 0.8);
     }
 
     private void drive(double numOfInches, double leftPower, double rightPower)
@@ -117,9 +160,9 @@ public class Test extends LinearOpMode
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
     }
 
-     private void setPosition(double numOfInches)
+    private void setPosition(double numOfInches)
     {
-        int distance = (int)(numOfInches * TICKS_PER_INCH);
+        int distance = (int)Math.round(numOfInches * TICKS_PER_INCH);
 
         backLeft.setTargetPosition(distance);
         backRight.setTargetPosition(distance);
@@ -135,7 +178,7 @@ public class Test extends LinearOpMode
         frontRight.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
         //set power to all motors
-        setPower(leftPower,rightPower);
+        setPower(leftPower, rightPower);
 
 
         while(frontLeft.isBusy() && frontRight.isBusy())
@@ -163,4 +206,16 @@ public class Test extends LinearOpMode
         frontRight.setPower(rightPower);
     }
 
+    private void initServo()
+    {
+        colorServo = hardwareMap.servo.get("colorServo");
+    }
+
+    private void initColorSensor()
+    {
+        colorSensor = hardwareMap.colorSensor.get("colorSensor");
+    }
+
 }
+
+
