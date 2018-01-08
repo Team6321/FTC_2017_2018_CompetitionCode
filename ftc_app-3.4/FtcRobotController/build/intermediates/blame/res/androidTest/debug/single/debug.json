@@ -1,23 +1,39 @@
 [
     {
-        "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_feedback.xml.flat",
-        "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\e8da4704326d1e60208325d544cbba0f\\res\\layout\\feedback.xml"
+        "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_generic_settings.xml.flat",
+        "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\activity_generic_settings.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_info_button.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\info_button.xml"
     },
     {
-        "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_generic_settings.xml.flat",
-        "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\activity_generic_settings.xml"
+        "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_feedback.xml.flat",
+        "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\e8da4704326d1e60208325d544cbba0f\\res\\layout\\feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_icon_menu.png.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\9935ac1ae524ffcd83466320138d645f\\res\\drawable\\icon_menu.png"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_usb_device.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\lynx_usb_device.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_motor.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\motor.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_squarebot.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\xml\\squarebot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_cube_mesh_vertex_shader.glsl.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\raw\\cube_mesh_vertex_shader.glsl"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_cube_mesh_vertex_shader.glsl.flat",
@@ -26,6 +42,10 @@
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_devices.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\digital_devices.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_pwms.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\pwms.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_app_settings.xml.flat",
@@ -52,12 +72,16 @@
         "source": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\xml\\device_filter.xml"
     },
     {
+        "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_blocks.xml.flat",
+        "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\8cdcfda26304a14005732e28e4d031be\\res\\layout\\activity_blocks.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_controller.xml.flat",
         "source": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_ftc_controller.xml"
     },
     {
-        "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_blocks.xml.flat",
-        "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\8cdcfda26304a14005732e28e4d031be\\res\\layout\\activity_blocks.xml"
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_load.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_load.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_info_button.xml.flat",
@@ -88,6 +112,10 @@
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\i2cs.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_icon_robotcontroller.png.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\icon_robotcontroller.png"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_usb_device.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\lynx_usb_device.xml"
     },
@@ -112,12 +140,16 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\header.xml"
     },
     {
-        "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbotsens.xml.flat",
-        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\xml\\pushbotsens.xml"
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_analog_inputs.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\analog_inputs.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_list_preference_line_item.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\2d768d447c2c049f93a90d9d97b0a51e\\res\\layout\\color_list_preference_line_item.xml"
+    },
+    {
+        "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbotsens.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\xml\\pushbotsens.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_simple_vertex_shader.glsl.flat",
@@ -132,6 +164,10 @@
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\activity_swap_usb_devices.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_banner_parent.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\banner_parent.xml"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_color_fragment_shader.glsl.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\2d768d447c2c049f93a90d9d97b0a51e\\res\\raw\\color_fragment_shader.glsl"
     },
@@ -140,24 +176,40 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\raw\\errormessage.wav"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_analog_output_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\analog_output_device.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_device_lynx.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\digital_device_lynx.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_button_shape.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\drawable-hdpi-v4\\button_shape.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_chimeconnect.wav.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\raw\\chimeconnect.wav"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbotsens.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\pushbotsens.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_device_lynx.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\digital_device_lynx.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_i2cs.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\i2cs.xml"
     },
     {
-        "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_pwm_device.xml.flat",
-        "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\pwm_device.xml"
-    },
-    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_texture_vertex_shader.glsl.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\e8da4704326d1e60208325d544cbba0f\\res\\raw\\texture_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_pwm_device.xml.flat",
+        "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\pwm_device.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_gray_line.xml.flat",
@@ -176,8 +228,24 @@
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\item_list_parent.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_warningmessage.wav.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\raw\\warningmessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_port_attached_row.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\port_attached_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo_controller_banner.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\servo_controller_banner.xml"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_feedback_shape_orange.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\2d768d447c2c049f93a90d9d97b0a51e\\res\\drawable\\feedback_shape_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_swap_usb_devices.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_swap_usb_devices.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_button_shape.xml.flat",
@@ -190,6 +258,10 @@
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_warningmessage.wav.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\raw\\warningmessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_texture_vertex_shader.glsl.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\raw\\texture_vertex_shader.glsl"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_advanced_rc_settings.xml.flat",
@@ -220,6 +292,10 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\simple_device.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_program_and_manage.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_program_and_manage.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_about.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\activity_about.xml"
     },
@@ -232,12 +308,12 @@
         "source": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_legacy.xml.flat",
-        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\legacy.xml"
-    },
-    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_blocks.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\bacc16e4c6c822669917a65b918835dd\\res\\layout\\activity_blocks.xml"
+    },
+    {
+        "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_legacy.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\legacy.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo_list.xml.flat",
@@ -248,12 +324,24 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\activity_ftc_wifi_channel_selector.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_advanced_rc_settings.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\advanced_rc_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_rev_scoot.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\xml\\rev_scoot.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_analog_outputs.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\analog_outputs.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_banner_parent.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\banner_parent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_legacy.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\legacy.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_blocks.xml.flat",
@@ -286,6 +374,14 @@
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_texture_fragment_shader.glsl.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\2d768d447c2c049f93a90d9d97b0a51e\\res\\raw\\texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_wifi_remembered_groups.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_ftc_wifi_remembered_groups.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_item_list_parent.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\item_list_parent.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_legacy.xml.flat",
@@ -336,8 +432,16 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\analog_output_device.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_ic_launcher.png.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_rev_scoot.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\xml\\rev_scoot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_icon_robotcontroller.png.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\9935ac1ae524ffcd83466320138d645f\\res\\drawable\\icon_robotcontroller.png"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_button_list.xml.flat",
@@ -360,6 +464,10 @@
         "source": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_template_info.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\template_info.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_wifi_channel_selector.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\activity_ftc_wifi_channel_selector.xml"
     },
@@ -370,6 +478,10 @@
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_motor.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\motor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_configure_from_template.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_configure_from_template.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_analog_inputs.xml.flat",
@@ -408,6 +520,10 @@
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\pwm_device.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_device_interface_module.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\device_interface_module.xml"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_icon_robotcontroller.png.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\6687e857204e25de2a80cab2fe36c73c\\res\\drawable\\icon_robotcontroller.png"
     },
@@ -436,6 +552,10 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5f892aee0dd9c97523bddeec84ef3a91\\res\\raw\\texture_vertex_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_info_button.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\info_button.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_swap_usb_devices.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\activity_swap_usb_devices.xml"
     },
@@ -448,8 +568,20 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5f892aee0dd9c97523bddeec84ef3a91\\res\\raw\\cube_mesh_vertex_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_gray_line.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\gray_line.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_feedback_shape_orange.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\e8da4704326d1e60208325d544cbba0f\\res\\drawable\\feedback_shape_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_lynx_address_update.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_ftc_lynx_address_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_pwm_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\pwm_device.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_device.xml.flat",
@@ -458,6 +590,10 @@
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_chimeconnect.wav.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\raw\\chimeconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_feedback_shape_orange.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\drawable\\feedback_shape_orange.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_programming_mode.xml.flat",
@@ -472,12 +608,24 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\raw\\chimeconnect.wav"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_chimeconnect.wav.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\raw\\chimeconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_simple_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\simple_device.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_inspection.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\eabf28d6964d13b6bdee3bbbd05c4ff5\\res\\layout\\activity_inspection.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_banner_parent.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\banner_parent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_color_fragment_shader.glsl.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\raw\\color_fragment_shader.glsl"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_device_lynx.xml.flat",
@@ -492,12 +640,20 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5f892aee0dd9c97523bddeec84ef3a91\\res\\raw\\simple_vertex_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_loading_indicator_overlay.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\layout\\loading_indicator_overlay.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_module_configure_address.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\lynx_module_configure_address.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_ic_launcher.png.flat",
         "source": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_wifi_channel_selector.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_ftc_wifi_channel_selector.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_port_attached_row.xml.flat",
@@ -516,12 +672,20 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\device_interface_module.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_cube_mesh_fragment_shader.glsl.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\raw\\cube_mesh_fragment_shader.glsl"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_configure_from_template.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\activity_configure_from_template.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo_controller_banner.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\servo_controller_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ic_launcher.png.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_squarebot.xml.flat",
@@ -534,6 +698,10 @@
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_k9legacybot.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\xml\\k9legacybot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_feedback.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\layout\\feedback.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo_controller_banner.xml.flat",
@@ -556,8 +724,20 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\activity_ftc_lynx_fw_update.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_maxmodules.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\maxmodules.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_generic_settings.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\activity_generic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_simple_vertex_shader.glsl.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\raw\\simple_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_module.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\lynx_module.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_gray_line.xml.flat",
@@ -566,6 +746,10 @@
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ic_launcher.png.flat",
         "source": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\servo.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_button_shape.xml.flat",
@@ -588,12 +772,24 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\xml\\k9usbbot.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_module_configure_address.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\lynx_module_configure_address.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_icon_menu.png.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\963c626d79f381b5c2c44592f37cd7fc\\res\\drawable\\icon_menu.png"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu_ftc_robot_controller.xml.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\menu\\ftc_robot_controller.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_motor_list.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\motor_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_button_shape.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\drawable\\button_shape.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_button_shape.xml.flat",
@@ -610,6 +806,10 @@
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_controller.xml.flat",
         "source": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_ftc_controller.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_icon_menu.png.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\icon_menu.png"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_header.xml.flat",
@@ -648,6 +848,10 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\template_info.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_lynx_fw_update.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_ftc_lynx_fw_update.xml"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_device_interface_module.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\device_interface_module.xml"
     },
@@ -684,12 +888,24 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\device_interface_module.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_devices.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\digital_devices.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_module_configure_address_spin_item.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\lynx_module_configure_address_spin_item.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_list_preference_line_item.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\e8da4704326d1e60208325d544cbba0f\\res\\layout\\color_list_preference_line_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbot.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\pushbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_texture_fragment_shader.glsl.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\raw\\texture_fragment_shader.glsl"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu_menu_server.xml.flat",
@@ -702,6 +918,10 @@
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_cube_mesh_vertex_shader.glsl.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\2d768d447c2c049f93a90d9d97b0a51e\\res\\raw\\cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_rev_scoot.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\rev_scoot.xml"
     },
     {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_swap_usb_devices.xml.flat",
@@ -724,12 +944,28 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\analog_output_device.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_motor_list.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\motor_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_blocks.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\dc6ae9a88eaac66bc884b0d428d5a1e7\\res\\layout\\activity_blocks.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_matrix_devices.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\matrix_devices.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_matrices.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\matrices.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\9935ac1ae524ffcd83466320138d645f\\res\\menu\\main_menu.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbot.xml.flat",
@@ -756,6 +992,18 @@
         "source": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_nxtstartupsound.wav.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\raw\\nxtstartupsound.wav"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_config_wifi_direct.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_config_wifi_direct.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_k9legacybot.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\k9legacybot.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_item_list_parent.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\item_list_parent.xml"
     },
@@ -776,12 +1024,28 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\xml\\rev_scoot.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_chimedisconnect.wav.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\raw\\chimedisconnect.wav"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_chimedisconnect.wav.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\raw\\chimedisconnect.wav"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbot.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\xml\\pushbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_color_list_preference_line_item.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\layout\\color_list_preference_line_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_header.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_red_line.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\red_line.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_errormessage.wav.flat",
@@ -796,8 +1060,20 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5f892aee0dd9c97523bddeec84ef3a91\\res\\raw\\cube_mesh_fragment_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_app_settings.xml.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\xml\\app_settings.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_app_settings.xml.flat",
         "source": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\xml\\app_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_k9usbbot.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\k9usbbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_configuration.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_ftc_configuration.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_errormessage.wav.flat",
@@ -828,6 +1104,10 @@
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\simple_device.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_errormessage.wav.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\raw\\errormessage.wav"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_load.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\activity_load.xml"
     },
@@ -844,6 +1124,18 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\lynx_module.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_i2cs.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\i2cs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_view_logs.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_view_logs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_module_configure_address_spin_item.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\lynx_module_configure_address_spin_item.xml"
+    },
+    {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_texture_fragment_shader.glsl.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5f892aee0dd9c97523bddeec84ef3a91\\res\\raw\\texture_fragment_shader.glsl"
     },
@@ -856,8 +1148,16 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\8cdcfda26304a14005732e28e4d031be\\res\\drawable\\black_border.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_generic_settings.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\activity_generic_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_red_line.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\red_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_device_filter.xml.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\xml\\device_filter.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo.xml.flat",
@@ -872,8 +1172,20 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\activity_configure_from_template.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_ic_launcher.png.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ic_launcher.png.flat",
         "source": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_lynx_usb_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\lynx_usb_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu_menu_server.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\dc6ae9a88eaac66bc884b0d428d5a1e7\\res\\menu\\menu_server.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_load.xml.flat",
@@ -886,6 +1198,10 @@
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_feedback_shape_orange.xml.flat",
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5f892aee0dd9c97523bddeec84ef3a91\\res\\drawable\\feedback_shape_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_digital_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\digital_device.xml"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu_ftc_robot_controller.xml.flat",
@@ -928,12 +1244,28 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\eabf28d6964d13b6bdee3bbbd05c4ff5\\res\\drawable\\icon_menu.png"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_analog_input_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\analog_input_device.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_nxtstartupsound.wav.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\raw\\nxtstartupsound.wav"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_servo_list.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\servo_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_squarebot.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\xml\\squarebot.xml"
+    },
+    {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
         "source": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_black_border.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\dc6ae9a88eaac66bc884b0d428d5a1e7\\res\\drawable\\black_border.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_motor_controller_banner.xml.flat",
@@ -984,6 +1316,10 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\analog_outputs.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_matrix_devices.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\matrix_devices.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_program_and_manage.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\activity_program_and_manage.xml"
     },
@@ -992,12 +1328,20 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\file_info.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_file_info.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\file_info.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
         "source": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
     },
     {
         "merged": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_device_filter.xml.flat",
         "source": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\xml\\device_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_motor_controller_banner.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\motor_controller_banner.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml_pushbotsens.xml.flat",
@@ -1052,6 +1396,14 @@
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\pwms.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_inspection.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\9935ac1ae524ffcd83466320138d645f\\res\\layout\\activity_inspection.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_button_list.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\button_list.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_matrices.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\b8c6954b31425aaae55cd82c572430c5\\res\\layout\\matrices.xml"
     },
@@ -1084,8 +1436,16 @@
         "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\384b462e6b5b05a75e88e599b6f43027\\res\\layout\\red_line.xml"
     },
     {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_i2c_device.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\i2c_device.xml"
+    },
+    {
         "merged": "C:\\Users\\Dinesh\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu_main_menu.xml.flat",
         "source": "C:\\Users\\Dinesh\\.gradle\\caches\\transforms-1\\files-1.1\\Inspection-release.aar\\963c626d79f381b5c2c44592f37cd7fc\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_controller.xml.flat",
+        "source": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_ftc_controller.xml"
     },
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_ftc_wifi_remembered_groups.xml.flat",
@@ -1102,5 +1462,13 @@
     {
         "merged": "C:\\Users\\killi\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_port_attached_row.xml.flat",
         "source": "C:\\Users\\killi\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\d421e33a349352bc21d7ef23d4fcb11d\\res\\layout\\port_attached_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_programming_mode.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\Blocks-release.aar\\dc6ae9a88eaac66bc884b0d428d5a1e7\\res\\layout\\activity_programming_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_matrices.xml.flat",
+        "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\FtcCommon-release.aar\\e53bf52753f281fa42bc50279fcb4290\\res\\layout\\matrices.xml"
     }
 ]

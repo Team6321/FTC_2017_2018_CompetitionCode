@@ -33,6 +33,22 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Sriram\\Documents\\GitHub\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Sriram\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\39decfb27e03ab8106101769e3486ea5\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\Programs\\FTC\\FTC 2017-2018\\FTC_2017_2018_CompetitionCode\\ftc_app-3.4\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {

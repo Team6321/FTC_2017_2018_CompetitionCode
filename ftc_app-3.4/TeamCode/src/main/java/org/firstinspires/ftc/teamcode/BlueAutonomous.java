@@ -132,6 +132,9 @@ public class BlueAutonomous extends LinearOpMode
     //turns robot specified number of degrees, and then turns it back
     private void rotateRobot(double turnDegrees)
     {
+        //if the number of degrees to turn is negative, you add it to 360 and turn that much
+        turnDegrees = (turnDegrees < 0) ? turnDegrees + 360: turnDegrees;
+
         boolean turnClockwise = (turnDegrees >= 180);
 
         //////////////Now do calculations for turning and stuff/////////////////////////////////
@@ -139,11 +142,11 @@ public class BlueAutonomous extends LinearOpMode
 
         if(turnClockwise)
         {
-            drive(numOfInchesToTurn, -0.5, 0.5); //goes until reaches distance to get to turn degree
+            drive(numOfInchesToTurn, 0.5, -0.5); //goes until reaches distance to get to turn degree
         }
         else
         {
-            drive(numOfInchesToTurn, 0.5, -0.5); //goes until reaches distance to get to turn degree
+            drive(numOfInchesToTurn, -0.5, 0.5); //goes until reaches distance to get to turn degree
         }
 
     }
