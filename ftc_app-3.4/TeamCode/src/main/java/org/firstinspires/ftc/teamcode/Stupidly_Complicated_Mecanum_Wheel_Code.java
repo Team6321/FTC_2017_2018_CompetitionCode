@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
-@TeleOp(name="TeleOPv2", group="New_Code")
+//@TeleOp(name="TeleOPv2", group="New_Code")
 //@Disabled
 public class Stupidly_Complicated_Mecanum_Wheel_Code extends OpMode{
 

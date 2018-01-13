@@ -13,14 +13,14 @@ import com.qualcomm.robotcore.hardware.Servo;
  */
 
 
-@Autonomous(name = "DriveStraight", group = "TeamCode")
+@Autonomous(name = "DriveStraight", group = "Maybe")
 
 
 public class DriveStraight extends LinearOpMode
 {
     private DcMotor frontLeft, frontRight, backLeft, backRight, armLeft, armRight, clawWristMotor;
     private Servo colorServo;
-    private ColorSensor colorSensor;
+ //   private ColorSensor colorSensor;
     private double clawPosition; //range: 0 to 1 (represents 0 to 1 pi radians)
     private final double TICKS_PER_REV = 1120.0;
     private final double WHEEL_DIAMETER = 4.25; //in inches, of course
@@ -40,7 +40,7 @@ public class DriveStraight extends LinearOpMode
     {
         initMotors();
         initServo();
-        initColorSensor();
+ //       initColorSensor();
         telemetry.addData("STATUS: ", "All hardware initialized successfully.");
         telemetry.update();
     }
@@ -83,7 +83,7 @@ public class DriveStraight extends LinearOpMode
 
     private void initColorSensor()
     {
-        colorSensor = hardwareMap.colorSensor.get("colorSensor");
+        //colorSensor = hardwareMap.colorSensor.get("colorSensor");
     }
 
     private void testCode()

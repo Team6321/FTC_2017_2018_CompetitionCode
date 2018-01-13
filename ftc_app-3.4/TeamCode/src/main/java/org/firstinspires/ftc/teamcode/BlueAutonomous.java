@@ -21,7 +21,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 
  */
 
-@Autonomous(name = "BlueAutonomous", group = "TeamCode")
+//@Autonomous(name = "BlueAutonomous", group = "TeamCode")
 
 public class BlueAutonomous extends LinearOpMode
 {

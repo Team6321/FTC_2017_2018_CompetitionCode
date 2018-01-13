@@ -15,7 +15,7 @@ import com.qualcomm.robotcore.util.Range;
     1) All the buttons and what they do are on Google Drive under the Software folder
  */
 
-@TeleOp(name = "TeamTeleOp", group = "Team Code") //random group name, can change if necessary
+@TeleOp(name = "TeamTeleOp", group = "Maybe") //random group name, can change if necessary
 
 public class TeamTeleOp extends LinearOpMode
 {

@@ -10,7 +10,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  * Created by Dinesh on 12/14/2017.
  */
 
-@TeleOp(name = "TestCode", group = "Team Code")
+//@TeleOp(name = "TestCode", group = "Team Code")
 
 public class TestCode extends LinearOpMode
 {
