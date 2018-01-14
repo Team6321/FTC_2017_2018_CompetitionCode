@@ -211,7 +211,7 @@ public class BlueAutonomous extends LinearOpMode
         setPower(leftPower, rightPower);
 
 
-        while(frontLeft.isBusy() && frontRight.isBusy())
+        while(frontLeft.isBusy() && frontRight.isBusy() && backLeft.isBusy() && backRight.isBusy())
         {
             // let the motors keep running
         }
